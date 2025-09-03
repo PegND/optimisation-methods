@@ -68,6 +68,36 @@
             height: auto;
         }
 
+        .favorites-section {
+            background-color: rgba(255, 255, 255, 0.7); /* Fond semi-transparent pour la lisibilité */
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block; /* Pour que la section ne prenne que la largeur de son contenu */
+        }
+
+        .favorites-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #4b0082;
+        }
+
+        .favorites-section ul {
+            list-style: none; /* Enlève les puces de la liste */
+            padding: 0;
+        }
+
+        .favorites-section li a {
+            font-size: 1.2em;
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .favorites-section li a:hover {
+            color: #4b0082;
+        }
+
         /* Media Query pour les petits écrans (téléphones) */
         @media (max-width: 600px) {
             body {
@@ -78,7 +108,7 @@
                 font-size: 2em;
             }
 
-            p {
+            p, .favorites-section li a {
                 font-size: 2em;
             }
 
@@ -101,6 +131,17 @@
     </div>
 
     <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjh5eHltbW56Y3Rya3g4b2tja2RydnlsdjR4NHl1ZjUyZnVvMnViOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sIIhZliB2McAo/giphy.gif" alt="Un Nyan Cat qui danse" class="nyan-gif">
+
+    <div class="favorites-section">
+        <h2>Mes sites préférés &lt;3</h2>
+        <ul>
+            <li><a href="https://forum.obsidian.md" target="_blank">Obsidian forum</a></li>
+            <li><a href="https://read.readwise.io/" target="_blank">Readwise Reader</a></li>
+            <li><a href="https://medium.com/@lennart.dde/i-built-a-daily-research-tracker-in-obsidian-using-python-and-now-i-know-exactly-how-d96612da0b93" target="_blank">Un article qui est cool</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Poker" target="_blank">Règles du Poker</a></li>
+            <li><a href="https://www.chess.com/fr/apprendre-a-jouer-aux-echecs" target="_blank">Débuter aux échecs</a></li>
+        </ul>
+    </div>
 
     <audio id="pigeonSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_728ff3ee13.mp3?filename=pigeon-82804.mp3" preload="auto"></audio>
 
