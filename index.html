@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigeon Party</title>
+    <style>
+        /* Styles généraux pour tous les appareils */
+/*         body {
+            background-color: #ffe4e1;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #4b0082;
+            line-height: 1.6;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #ff69b4;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        img {
+            border: 5px solid #4b0082;
+            border-radius: 15px;
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+            max-width: 100%;
+            height: auto;
+            margin-top: 40px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .cool-button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cool-button:hover {
+            transform: scale(1.1);
+        } */
+        body {
+            background-color: #ffe4e1;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #4b0082;
+            line-height: 1.6;
+            margin: 0;
+            box-sizing: border-box;
+
+            /* Fond de mosaïque de pigeons */
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OHE2bndvZ2FwbjRmYjczejRpdXMwNmRiYXhnZGV2b283NWRwODhtYiZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/hmzZkvOJPLQti/giphy.gif'); 
+            background-repeat: repeat;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #ff69b4;
+            color: white; /* Texte blanc pour mieux ressortir sur la mosaïque */
+            -webkit-text-stroke: 1px #4b0082; /* Bordure de texte pour la lisibilité */
+        }
+
+        p {
+            font-size: 3.5em;
+            color: rgb(66, 196, 29); /* Texte blanc pour mieux ressortir sur la mosaïque */
+            -webkit-text-stroke: 0.9px #0a5555; /* Bordure de texte */
+        }
+
+        img {
+            border: 5px solid #4b0082;
+            border-radius: 15px;
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+            max-width: 100%;
+            height: auto;
+            margin-top: 40px;
+        }
+
+        .button-container {
+            margin-top: 30px;
+            margin-bottom: 20px; /* Ajout d'une marge pour l'espace entre le bouton et le GIF */
+        }
+
+        .cool-button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cool-button:hover {
+            transform: scale(1.1);
+        }
+
+        .nyan-gif {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Query pour les petits écrans (téléphones) */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .cool-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur la page du bureau O1CD19 !</h1>
+    <p>Le lieu des pigeons avides de licences payantes !</p>
+
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjBqaW9oYmxtMmcwaGt0MzN2anU5ZXVzc2lqMmN4OXh5NnA3Mjh1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GyKCVW91R83Ek/giphy.gif" alt="Un pigeon qui danse">
+
+    <div class="button-container">
+        <button class="cool-button" onclick="playPigeonSound()">Payer en bitcoin !</button>
+    </div>
+
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjh5eHltbW56Y3Rya3g4b2tja2RydnlsdjR4NHl1ZjUyZnVvMnViOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sIIhZliB2McAo/giphy.gif" alt="Un Nyan Cat qui danse" class="nyan-gif">
+
+    <audio id="pigeonSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_728ff3ee13.mp3?filename=pigeon-82804.mp3" preload="auto"></audio>
+
+    <script>
+        function playPigeonSound() {
+            var sound = document.getElementById("pigeonSound");
+            sound.play();
+            alert('Coo coo ! (Bravo, un abonnement d\'un an pour le site Medium !)');
+
+        }
+    </script>
+
+</body>
+</html>
